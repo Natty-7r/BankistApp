@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bankist.css" rel="stylesheet" />
+    <title>Bankist</title>
+</head>
+<body>
+    <!-- <div class="popup">
+        <button class="btn btn-popup btn-close-popup">&times;</button>
+        <h2 class="popup-header">
+            Open your bank account in just 
+            <span class="colored-text">5 minutes</span>
+        </h2>
+        <form action ="" methode="post" class="popup-form">
+            <div class="inputContainer">
+                <label class="label" for="">first name</label>
+                <input type="text" class="input input-popup" />
+            </div>
+            <div class="inputContainer">
+                <label class="label" for="">first name</label>
+                <input type="text" class="input input-popup" />
+            </div>
+            <div class="inputContainer">
+                <label class="label" for="">first name</label>
+                <input type="text" class="input input-popup" />
+            </div>
+            <button class="btn btn-popup btn-popup-next">
+                Next step &rightarrow;
+            </button>
+        </form>
+    </div>
+    <div class="overlay"></div> -->
+    <header class="header">
+        <div class=" header-left"> Log in to get started</div>
+        <div class="header-logo logo"></div>
+        <div class="header-right">
+            <input type="text" class="input input-header input-user" placeholder="User" />
+            <input type="text" class="input input-header input-pin" placeholder="PIN" />
+           <button class="btn btn-header btn-login"><p>&rightarrow;<p></button>
+           <br />
+           <p class="login-error"></p>
+        </div>
+    </header> 
+    <main class="app">
+        <div class="main-header">
+            <div class="content-name">
+                <h3 class="current-header">
+                    Current balance
+                </h3>
+                <p class="date">09/03/2037</p>
+            </div>
+            <h3 class="total-balace">
+               <p class="balance-value">
+                00.00
+               </p>
+                <p class="birr">birr</p>
+            </h3>
+
+        </div>
+        <div class="main-content">
+            <div class="movements">
+                <div class="onemovement">
+                    <div class="mov-left">
+                        <div class="mov mov-deposite">
+                            <p class="mov-order">
+                                1
+                            </p>
+                            <p class="mov-name mov-name-deposite">
+                                deposite
+                            </p>
+                        </div>
+                        <p class="mov-date"> 12/12/12</p>
+
+                    </div>               
+                                               
+                    </p>
+                    <p class="movement-amount">$5000</p>
+                </div>
+                <div class="onemovement">
+                    <div class="mov-left">
+                        <div class="mov-withdrawal mov">
+                            <p class="mov-order">
+                                1
+                            </p>
+                            <p class="mov-name move-name-withdrawal">
+                                withdrawal
+                            </p>
+                        </div>
+                        <p class="mov-date"> 12/12/12</p>
+
+                    </div>                
+
+                    </p>
+                    <p class="movement-amount">$5000</p>
+                </div>
+                
+            </div>
+            <div class="actions">
+                <div class="action transfer">
+                    <h2 class="action-header">
+                        Transfer money
+                    </h2>
+                    <div class="forms">
+                        <div class="input-container">
+                            <input type="text" class="input input-action input-transfer input-receipt-name" />
+                            <label class="label" for="">Receiver user</label>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="text" class="input input-action  input-transfer input-transfer-amount" />
+                            <label class="label" for="">amount</label>
+                        </div>
+                            <button class="btn btn-action btn-action-transfer"><p>&rightarrow;<p></button>
+    
+
+                    </div>
+                   
+                    </div>
+
+                <div class="action loan">
+                    <h2 class="action-header">
+                       Request loan
+                    </h2>
+                    <div class="forms">
+                    <div class="input-container">
+                        <input type="text" class="input input-action input-loan input-loan " />
+                        <label class="label" for="">Loan  amount</label>
+                    </div>
+                        <button class="btn btn-action btn-action-loan"><p>&rightarrow;<p></button>
+                    </div>
+                   
+                </div>
+
+                <div class="action close-account">
+                    <h2 class="action-header">
+                        Close account
+                    </h2>
+                    <div class="forms">
+                    <div class="input-container">
+                        <input type="text" class="input input-action input-close-user input-close " />
+                        <label class="label" for="">Confirm  username</label>
+                    </div>
+                    <div class="input-container">
+                    <input type="text" class="input input-action input-close  input-close-pin" />
+                    <label class="label" for="">Confirm PIN</label>
+                    </div>
+                    <button class="btn btn-action btn-action-close"><p>&rightarrow;<p></button>
+                        
+                    </div>
+                    
+                </div>
+            
+            </div>
+        </div>
+        <div class="footer">
+            <div class="summary">
+                <div class="summary-note summary-in">
+                    in <p class="summary-in-value summary-value">000</p>
+                    <p class=" birr"> birr</p>
+                </div>
+                <div class="summary-note summary-out">
+                    out <p class="summary-out-value summary-value">000 
+                        </p>
+                        <p class=" birr"> birr</p>
+                </div>
+                <div class="summary-note summary-interest">
+                    intrest <p class="summary-interest-value summary-value">000</p>
+                    <p class=" birr"> birr</p>
+                </div>
+                <div class="sort">&downarrow; sort</div>
+            </div>
+            <div class="log-session">
+                you will logged out in 
+                <p class="logout-time">09:09</p>
+            </div>
+        </div>
+    </main> 
+    <script src="bankistAppOOP.js"></script>  
+</body>
+</html>

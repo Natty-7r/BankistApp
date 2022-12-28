@@ -1,0 +1,325 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:inherit;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: sans-serif;
+    box-sizing:border-box;
+    background-color:#f1f3f5;
+    
+}
+
+.header{
+    margin:1.6rem auto 1.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-left{
+    font-size:2rem;
+}
+.logo{
+    background:url("img.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 7rem;
+    width: 8rem;
+    clip-path: polygon(0 0, 20% 0, 50% 50%,80% 0, 100% 0,50% 100%,0 0);
+}
+
+.header-right{
+    display: flex;
+    justify-content: space-around;
+    gap:.5rem;
+}
+.header-right .input{
+    background-color: white;
+    width:10rem;
+    height:3.5rem;
+    padding:.8rem 1.6rem;
+    border:none;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+::placeholder{
+    color:#DADCE0;
+    font-weight: 700;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    height: 4rem ;
+    width: 6rem;
+    margin-left: .4rem;
+    font-weight:900;
+    background-color: transparent;
+    position: relative;
+    border-radius: 1rem;
+    border: solid thin transparent;
+    cursor: ;
+}
+.btn p{
+    position: absolute;
+    top:37%;
+    left:50%;
+    font-size: 3.2rem;
+    transform: translate(-50%,-50%);
+    
+}
+.btn:hover{
+    opacity: .85;
+    border: solid thin #DADCE0;
+}
+ .btn-header{
+
+}
+.header .btn:hover{
+    border: solid thin rgb(208, 203, 203);
+}
+.login-error{
+    position: absolute;
+    top:10rem;
+    margin-right: 2rem;
+    padding:.4rem 1.2rem; 
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight:400 ;
+    color:rgb(54, 8, 8);
+    border: solid thin rgb(150, 141, 125);;
+    border-radius: .4rem;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+}
+
+.app{
+    width:80rem;
+    /* width: 90%; */
+    margin:0rem auto 0px;
+    opacity: 0;
+    transition:  opacity .1s;
+}
+.visible{
+    opacity: 1 !important;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 3%;
+    margin-bottom: 1.2rem;;
+    font-size: 2.2rem;
+}
+.main-header .date{
+    color: #868e96;
+    font-size: 80%;
+}
+.total-balace{
+    display: flex;
+    gap:.4rem;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    gap:1.4rem;
+    height:45rem;
+}
+.movements{
+    flex-basis:50%;
+    background-color: white;
+    border-radius: .8rem;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.063);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(1fr);
+    align-items: start;
+    align-content: start;
+        overflow-y: scroll;
+    /* margin: 0px auto; */
+    
+}
+.onemovement{
+    margin:.4rem;
+    padding:1.5rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .4rem;
+    border-bottom:solid thin rgba(153, 136, 136, 0.338);
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.01);
+}
+.mov-left{
+    display: flex;
+    gap:2.4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.mov-date{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:#495057;
+}
+.mov{
+    display: flex;
+    justify-content: space-around;
+    padding:.4rem 1.2rem;
+    gap: .4rem;
+    border-radius:.8rem;;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color:white;
+}
+.mov-withdrawal{
+    background: linear-gradient(to right bottom,#ff8787,#c92a2a);
+}
+.mov-deposite{
+    background: linear-gradient(to right bottom,#69db7c,#2b8a3e);
+}
+.movement-amount{
+    font-size: 2.2rem;
+}
+
+
+
+.actions{
+    flex-basis:40%;
+    display: flex;
+    flex-flow:column;
+    justify-content: space-between;
+}
+.action{
+    width:100%;
+    height:13rem;
+    border-radius: .8rem;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
+    padding:1.2rem 0px;
+    
+}
+.transfer{
+    background: linear-gradient(to right bottom,#fcc419,#ff922b);
+}
+.loan{
+    background: linear-gradient(to right bottom,#8ce99a,#37b24d);
+}
+.close-account{
+    background: linear-gradient(to right bottom,#ff922b,#e03131);
+}
+.action .action-header{
+    width: fit-content;
+    padding: .4rem;
+    margin: .8rem auto .8rem 1.2rem;
+    font-size: 1.6rem;
+    
+}
+.forms{
+display: flex;
+margin:0px 1%;
+width: fit-content;
+gap:.8rem;
+justify-content: space-between;
+align-items: center;
+}
+.input-container{
+  position: relative;
+  width: 12rem;
+  height: 3rem;
+}
+.input-action{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding:.8rem;
+    background-color: #dee2e6;
+    border-radius: .8rem;    
+    border: none;
+    margin: 0px 1.2rem 1.2rem;
+    position: relative;
+}
+.input-transfer{
+    background-color: #ffc078;
+}
+.input-loan{
+    background-color: #8ce99a;
+}
+.input-close{
+    background-color:#ff8787 ;
+}
+.btn-action{
+    margin-left: 1.2rem;
+    width:4rem ;
+    height: 3.2rem;
+    background-color: white;
+    border-radius: .4rem;
+}
+.label{
+    position: absolute;
+    top:4rem;
+    left:3.2rem;
+    text-transform: capitalize;
+}
+.input:focus{
+    outline:solid thin #e9ecef;
+}
+
+/*  footer*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:75rem;
+    margin:1.2rem auto 1.2rem;
+    font-size: 1.6rem;;
+}
+.summary{
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:.4rem;
+}
+.summary-note{
+    display: flex;
+    align-items: center;
+    gap:.4rem;
+    text-transform: capitalize;
+}
+.summary-value{
+    font-size: 2rem;
+    font-weight: 600;
+    color:rgb(216, 164, 67);
+
+}
+.birr{
+    text-transform: lowercase;
+  
+}
+.sort{
+    text-align: center;
+    transition:  color .3s ,cursor 3s;
+}
+.sort:hover{
+    transition: all .3s;
+    color:red;
+    cursor: pointer;
+}
+.log-session{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap:2.1rem;
+    text-align: center;
+}
+@media(max-width:900px){
+    html{
+        font-size: 6.8px;
+    }
+}
+/*  --------------------------------------- */
